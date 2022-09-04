@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>BASE</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static '/clothsApp/css/style.css' %}" >
+    </head>
+    <body>
+    <header>
+        <nav>
+            <ul class="navbar" >
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BUY</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#" float="right" >SIGN IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        {% block contain %}
+        {% endblock %}
+
+        {% block footer %}
+        <hr>
+        <center><footer ><h6>DESIGNED BY LOUKIK</h6></footer></center>
+        {% endblock %}
+        <div class="navbar1">
+            <a>Home</a>
+            <a>News</a>
+            <a>Contact</a>
+        </div>
+        
+</html>
